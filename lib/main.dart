@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'file_converter_page.dart';
 
 void main() {
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,7 +24,7 @@ class MainApp extends StatelessWidget {
           secondary: Colors.amber,
           brightness: Brightness.dark,
         ),
-        textTheme: TextTheme(
+        textTheme: const TextTheme(
           headlineSmall: TextStyle(
               color: Colors.deepPurple,
               fontSize: 20,
